@@ -35,5 +35,4 @@ print(emp_2.raise_amt)
 
 emp_1.pay = 50000
 emp_1.apply_raise()
-
 print(emp_1.pay)
