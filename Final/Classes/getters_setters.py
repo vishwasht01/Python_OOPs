@@ -7,7 +7,9 @@ class User:
         self.__password=password #private(Access Modifier) can be accessed within class only
 
     def get_email(self):
-        print(f"Email accesed at {datetime.now()}")
+        print(f"Email accessed at {datetime.now()}")##if I had to show the date and time at which my email was accessed
+                                                    #then I had to change a lot of code so by using getters and setters
+                                                    #I can only change that part
         return self._email
 
     def set_email(self,new_email):
