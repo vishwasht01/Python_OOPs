@@ -5,7 +5,9 @@ class Shape(ABC):
                     ##It catches the error at class creation time,not later during execution.
     def area(self):
         pass  # abstract method
-
+    ##In Python, abstract classes don’t cause compile-time errors because Python is an interpreted language.
+    ##Instead, if a subclass doesn’t implement all abstract methods, Python raises a TypeError at runtime when you try
+    ##to instantiate that subclass.
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
